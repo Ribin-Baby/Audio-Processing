@@ -94,7 +94,19 @@ $y(t)=x(t)−αx(t−1)$
 [![orginal audio signal](https://raw.githubusercontent.com/Ribin-Baby/Audio-Processing/main/images/6.png)](https://github.com/Ribin-Baby/Audio-Processing/tree/main/images)
 
 
+4. ## >>> applying hann-window function to each audio samples
+* We use the hann-window function to limit spectrum leakage, smooth the beginning and end of each audio sample we previously prepared, and challenge the FFT's assumption that the data is endless.
+
+*   full audio signal as continuous plots of `10ms` samples  after applying hann-window function is given below:
+  
+![orginal audio signal](https://raw.githubusercontent.com/Ribin-Baby/Audio-Processing/main/images/windows.gif)
+* a single audio sample  after applying hann-window function will looks like this:
+
+[![orginal audio signal](https://raw.githubusercontent.com/Ribin-Baby/Audio-Processing/main/images/7.png)](https://github.com/Ribin-Baby/Audio-Processing/tree/main/images)
 
 
+* audio signal after applying window function is dispalyed below:
+
+[audio sample](https://user-images.githubusercontent.com/115212881/198013223-fdf9dc17-0994-4526-ba01-409dc48aa690.mov)
 
 
