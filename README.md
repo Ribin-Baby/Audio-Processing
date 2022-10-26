@@ -120,6 +120,16 @@ $y(t)=x(t)−αx(t−1)$
 
 [![orginal audio signal](https://raw.githubusercontent.com/Ribin-Baby/Audio-Processing/main/images/5.png)](https://github.com/Ribin-Baby/Audio-Processing/tree/main/images)
 
+7. ## >>> `spectrogram` of the audio signal
+* A spectrogram is a visual representation of the spectrum of frequencies of a signal as it varies with time. It’s a representation of frequencies changing with respect to time for given audio signals.
+* In spectrogram we have time in `X-axis` and frequency in `Y-axis`.
+
+
+*   audio signal `spectrogram` is shown below:
+  
+![orginal audio signal](https://raw.githubusercontent.com/Ribin-Baby/Audio-Processing/main/images/9.png)
+* The colour intensity shows the variation in power level of audio signal in `(dB)`.
+
 
 
 
