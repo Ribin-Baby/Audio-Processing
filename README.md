@@ -133,6 +133,7 @@ $y(t)=x(t)−αx(t−1)$
 8. ## >>> `MFCC` ( Mel-frequency Cepstral Coefficients ) feature extraction
 * mel-scale comes from the fact that human ear is highly sensitive to small changes made in the low frequency components. mel-scale is almost linear for frequency below 1000 Hz, and logarithmic for frequency above 1000 Hz, thus following the same pattern as that of the human ear.
 * The [mel frequency cepstral coefficients](https://en.wikipedia.org/wiki/Mel-frequency_cepstrum) (MFCCs) of a signal are a small set of features (usually about 10-20) which concisely describe the overall shape of a spectral envelope.
+* MFCC features are widely used in speech recognition problems. Speech is dictated by the way in which we use our oral anatomy to create each sound. Therefore, one way to uniquely identify a sound (independent of the speaker) is to create a mathematical representation that encodes the physical mechanics of spoken language. MFCC features are one approach to encoding this information.
 * In MFCC plot we have time in `X-axis` and `n` number of MFCC features  in `Y-axis` in our case it is `12` only.
 
 
