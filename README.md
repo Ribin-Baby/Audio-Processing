@@ -1,20 +1,14 @@
  # Audio Processing Tutorial Book
 ---
 
-### >> Tools used:
+## >> Tools used:
 ---
 
-[![Build Status](https://www.python.org/static/community_logos/python-logo.png =200x80)](https://www.python.org/downloads/release/python-3715/) 
+[![pyhton](https://www.python.org/static/community_logos/python-logo.png)](https://www.python.org/downloads/release/python-3715/)   [![librosa](https://raw.githubusercontent.com/librosa/librosa/main/docs/img/librosa_logo_text.svg)](https://librosa.org/)   [![pydub](https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_86c4f17e5b0c4fc3d86420b9c7c5894c/pydub.png)](https://pydub.com/) 
 
-[![Build Status](https://raw.githubusercontent.com/librosa/librosa/main/docs/img/librosa_logo_text.svg =200x80)](https://librosa.org/) 
+[![numpy](https://ebssistemas.com/file/2021/05/NumPy-200x80.png)](https://numpy.org/)  [![matplotlib](https://matplotlib.org/2.0.2/plot_directive/mpl_examples/api/thumbnails/logo2.png)](https://matplotlib.org/stable/index.html)
 
-[![Build Status](https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_86c4f17e5b0c4fc3d86420b9c7c5894c/pydub.png =200x80)](https://pydub.com/) 
-
-[![Build Status](https://user-images.githubusercontent.com/98330/64479472-4b35c900-d16c-11e9-8d49-71fc02cd539f.png =200x180)](https://numpy.org/) 
-
-[![Build Status](https://matplotlib.org/stable/_static/images/logo2.svg =200x200)](https://matplotlib.org/stable/index.html)
-
-### >> Installing tools:
+## >> Installing tools:
 ---
 1. <b>python</b>
  ```python
