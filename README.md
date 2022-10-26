@@ -94,7 +94,7 @@ $y(t)=x(t)−αx(t−1)$
 [![orginal audio signal](https://raw.githubusercontent.com/Ribin-Baby/Audio-Processing/main/images/6.png)](https://github.com/Ribin-Baby/Audio-Processing/tree/main/images)
 
 
-4. ## >>> applying hann-window function to each audio samples
+5. ## >>> applying hann-window function to each audio samples
 * We use the hann-window function to limit spectrum leakage, smooth the beginning and end of each audio sample we previously prepared, and challenge the FFT's assumption that the data is endless.
 
 *   full audio signal as continuous plots of `10ms` samples  after applying hann-window function is given below:
@@ -108,5 +108,18 @@ $y(t)=x(t)−αx(t−1)$
 * audio signal after applying window function is dispalyed below:
 
 [audio sample](https://user-images.githubusercontent.com/115212881/198013223-fdf9dc17-0994-4526-ba01-409dc48aa690.mov)
+
+6. ## >>> time domain to frequency domain conversion of audio signal
+* we use Fast Fourier Transform (FFT) to do this conversion task. 
+* after this conversion a signal in time domain will be converted to frequency domain. 
+
+*   audio signal in `time domain ( X-axis time )` is shown below:
+  
+![orginal audio signal](https://raw.githubusercontent.com/Ribin-Baby/Audio-Processing/main/images/1.png)
+* Audio signal after applying FFT , now in `frequency domain (X-axis frequency)` is shown below:
+
+[![orginal audio signal](https://raw.githubusercontent.com/Ribin-Baby/Audio-Processing/main/images/5.png)](https://github.com/Ribin-Baby/Audio-Processing/tree/main/images)
+
+
 
 
