@@ -128,7 +128,26 @@ $y(t)=x(t)−αx(t−1)$
 *   audio signal `spectrogram` is shown below:
   
 ![orginal audio signal](https://raw.githubusercontent.com/Ribin-Baby/Audio-Processing/main/images/9.png)
-* The colour intensity shows the variation in power level of audio signal in `(dB)`.
+* The colour intensity shows the variation in power level of audio signal in `(dB)`, red colour indicates more power and blue indicates low power areas.
+
+8. ## >>> `MFCC` ( Mel-frequency Cepstral Coefficients ) feature extraction
+* mel-scale comes from the fact that human ear is highly sensitive to small changes made in the low frequency components. mel-scale is almost linear for frequency below 1000 Hz, and logarithmic for frequency above 1000 Hz, thus following the same pattern as that of the human ear.
+* The [mel frequency cepstral coefficients](https://en.wikipedia.org/wiki/Mel-frequency_cepstrum) (MFCCs) of a signal are a small set of features (usually about 10-20) which concisely describe the overall shape of a spectral envelope.
+* In MFCC plot we have time in `X-axis` and `n` number of MFCC features  in `Y-axis` in our case it is `12` only.
+
+
+*   `MFCC` feature plot is shown below:
+  
+![orginal audio signal](https://raw.githubusercontent.com/Ribin-Baby/Audio-Processing/main/images/11.png)
+
+9. ## >>> Reconstruction of audio from MFCC features
+* We can rebuild our original signal from MFCCs up to a certain degree even if they are a very compressed version of our original audio signal; nonetheless, acceptable losses must be taken into account.
+*  a reconstructed version of above audio signal is displayed below:
+
+[audio sample](https://user-images.githubusercontent.com/115212881/198025434-f1d60eb5-5f70-449c-9f84-c630980dee05.mov)
+
+
+
 
 
 
