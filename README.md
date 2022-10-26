@@ -96,6 +96,11 @@ $y(t)=x(t)−αx(t−1)$
 
 5. ## >>> applying hann-window function to each audio samples
 * We use the hann-window function to limit spectrum leakage, smooth the beginning and end of each audio sample we previously prepared, and challenge the FFT's assumption that the data is endless.
+* The following equation generates the coefficients of a Hann window:
+
+> $w(n)=0.5(1−cos(2πnN)),0≤n≤N$
+
+> The window length  $L =  N  + 1$.
 
 *   full audio signal as continuous plots of `10ms` samples  after applying hann-window function is given below:
   
