@@ -146,6 +146,9 @@ $y(t)=x(t)−αx(t−1)$
 
 [audio sample](https://user-images.githubusercontent.com/115212881/198025434-f1d60eb5-5f70-449c-9f84-c630980dee05.mov)
 
+### THE END
+___
+
 
 
 
