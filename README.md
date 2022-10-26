@@ -30,6 +30,69 @@
  ```python
  pip install matplotlib==3.2.2
 ```
+<br>
+
+1. ## >>> Reading Audio file
+* We read audio files using `librosa` python package. Librosa is a tool used for music and audio analysis and processing.
+
+* its a `4 second` audio with `sample rate : 22050 samples / second`.
+*  sample plot of the audio signal is given below:
+  
+[![orginal audio signal](https://raw.githubusercontent.com/Ribin-Baby/Audio-Processing/main/images/1.png)](https://github.com/Ribin-Baby/Audio-Processing/tree/main/images)
+
+* the original audio is displayed below:
+
+[audio sample](https://user-images.githubusercontent.com/115212881/197967862-03e34890-4536-455e-9aad-b1eba1094514.mov)
+
+
+
+2. ## >>> Voice Activity Detection (VAT) and audio clipping.
+* Voice activity detection (VAD) is **a technique in which the presence or absence of human speech is detected**.
+* We begin by normalising the audio signal so that its amplitude falls between -1 and +1.  
+* Next, we assign a threshold value above which when the signal goes, it will be a speech signal and all other below are noises and thus not considered.
+* Through this process, we select our area of interest from the audio sample, and from that index range, we clip the audio and generate the desired output.
+*   sample plot of the audio signal after VAD  and clipping is given below:
+  
+[![orginal audio signal](https://raw.githubusercontent.com/Ribin-Baby/Audio-Processing/main/images/2.png)](https://github.com/Ribin-Baby/Audio-Processing/tree/main/images)
+
+* the red graph is the VAD plot and the blue one is the audio signal.
+* The area where the red pulse occured is our area of interest.
+* after selecting the range we will clip the audio sample in that selected range, a cropped audio signal plot is given below:
+[![orginal audio signal](https://raw.githubusercontent.com/Ribin-Baby/Audio-Processing/main/images/3.png)](https://github.com/Ribin-Baby/Audio-Processing/tree/main/images)
+* so after cropping the audio only contains speech / human voice the silent part gets removed and thus the duration also gets reduced.
+*  the cropped audio / audio after clipping is displayed below:
+
+[audio sample](https://user-images.githubusercontent.com/115212881/197990158-d0e9e4ae-dddc-44f0-9988-dbad54480c6b.mov)
+
+
+3. ## >>> Pre-Emphasis
+* The first step is to apply a pre-emphasis filter on the signal to amplify the high frequencies. A pre-emphasis filter is useful in several ways: (1) balance the frequency spectrum since high frequencies usually have smaller magnitudes compared to lower frequencies, (2) avoid numerical problems during the Fourier transform operation and (3) may also improve the Signal-to-Noise Ratio (SNR).
+
+The pre-emphasis filter can be applied to a signal  `x`  using the first order filter in the following equation:
+
+$y(t)=x(t)−αx(t−1)$
+
+* where `α` is the filter coefficient we take its value as `0.97` in most of the cases.
+*   sample plot of the audio signal after pre-emphasis is given below:
+  
+[![orginal audio signal](https://raw.githubusercontent.com/Ribin-Baby/Audio-Processing/main/images/4.png)](https://github.com/Ribin-Baby/Audio-Processing/tree/main/images)
+
+* pre-emphasised audio is displayed below:
+
+
+[audio sample](https://user-images.githubusercontent.com/115212881/197996125-94f82bd4-176d-49c1-b9a7-53e48fe9fa2c.mov)
+
+4. ## >>> sampling audio signal
+* first of all we are splitting the audio signal or applying a sliding window to the audio signal so that we will get `n`- number of audio samples of equal time duration / intervals (we are taking `10ms` audio samples).
+
+*   full audio signal as continuous plots of `10ms` samples is given below:
+  
+[![orginal audio signal](https://raw.githubusercontent.com/Ribin-Baby/Audio-Processing/main/images/frame.gif)](https://github.com/Ribin-Baby/Audio-Processing/tree/main/images/frame.gif)
+
+* a single audio sample will looks like this:
+
+[![orginal audio signal](https://raw.githubusercontent.com/Ribin-Baby/Audio-Processing/main/images/6.png)](https://github.com/Ribin-Baby/Audio-Processing/tree/main/images)
+
 
 
 
